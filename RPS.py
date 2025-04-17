@@ -23,10 +23,21 @@ def main():
     if player == computer:
       print("Tie")
       ties = ties + 1
-    elif player > computer:
+    elif player == "P" and computer == "R":
       print("You Won!!!")
       wins = wins + 1
-    elif player < computer:
+    elif player == "R" and computer == "P":
+      print("You Suck! ToT")
+      losses = losses + 1
+    elif player == "S" and computer == "P":
+      print("You Won!!!")
+      wins = wins + 1
+    elif  player == "P" and computer == "S":
+      print("You Suck! ToT")
+      losses = losses + 1
+    elif player == "R" and computer == "S":
+      print("You Won!!!")
+    elif player == "S" and computer == "R":
       print("You Suck! ToT")
       losses = losses + 1
 #Ask the user if they would like to play again.
